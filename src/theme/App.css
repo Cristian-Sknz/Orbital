@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600;700;900&display=swap');
+@import url('Dark-mode.css');
+
+:root {
+
+    /* =========== Cores ========  */
+    --scroll-bar-color: #eac1a0;
+    /* background */
+    --background-color: #FAF0E8;
+    --second-background-color: #EBD5C6;
+    --third-background-color: #383838;
+    --fourth-background-color: #ffffff;
+    --fourth-background-color: #ffffff;
+    --fifth-background-color: #353535;
+    --contact-background-color: #383838;
+
+    /* nav */
+    --navbar-mobile-background: #383838;
+    --navbar-mobile-color: #ffffff;
+    --navbar-desktop-color: #383838;
+    --navbar-active-background: #ffffff;
+    --border-header: #00000080;
+    --menu-btn-color: #383838;
+    --menu-btn-active: #fff;
+
+    /* home */
+    --home-font-color: #383838;
+
+    /* services */
+    --activity-hover: #383838;
+
+    /* projects */
+    --overlay-content-color: #fff;
+
+
+    /* scroll */
+    --scrolltop-background-color: #000000;
+    --scrolltop-color: #ffffff;
+
+    /* font color */
+    --primary-font-color: #ffffff;
+    --secondary-font-color: #383838;
+
+    --title-font-color: #383838;
+    --title-secondary-color: #383838;
+
+    /* shadow */
+    --home-shadow-color: #383838;
+    --primary-shadow-color: #383838;
+    --secondary-shadow-color: #fff;
+
+    /* btn */
+    --btn-primary-color: #383838;
+    --btn-secondary-color: #ffffff;
+    --btn-primary-hover: #000000;
+    --btn-slider-color: #383838;
+
+    /* overlay */
+    --overlay-background: #383838;
+    --overlay-bottom: #000000;
+    --overlay-icon: #fff;
+
+    /* validation */
+    --message-color: #fff;
+    --error-color: #F26464;
+    --success-color: #5FCD69;
+
+    /* card */
+    --card-background-color: #383838;
+    --card-font-color: #ffffff;
+    --card-border-color: #fff;
+
+    /* ========== Fontes ============ */
+    --body-font: 'Poppins', sans-serif;
+    --subtitle-font: 'MuseoModerno', cursive;
+    --icon-font-size: 3rem;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 5rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --btn-font-size: 1.2rem;
+
+    /*========== Font weight ==========*/
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+
+    /*========== Margins ==========*/
+    --mb-03: .3rem;
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+    --mb-7: 4rem;
+    /*========== z index ==========*/
+    --z-behind: -1;
+    --z-tooltip: 10;
+    --z-main: 50;
+    --z-fixed: 100;
+    /* Assets */
+    --logo: url('../logo.svg');
+    /* --lines-background: url('../assets/lines-background-mobile.png'); */
+}
+
+:target {
+    scroll-margin-top: calc(var(--mb-6) + var(--mb-03));
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 3rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--background-color);
+    color: var(--secondary-font-color);
+    line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+    width: .6rem;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border: 3px solid var(--scroll-bar-color);
+    border-radius: 20px;
+}
+
+body.dark-theme::-webkit-scrollbar-thumb{
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+}
+
+
+h1,
+h2,
+h3 {
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.section-title{
+    color: var(--title-primary-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+}
+
+.equipe .section-title,
+.projetos .section-title,
+.galeria .section-title{
+    color: var(--title-secondary-color);
+}
+
+
+section,
+footer{
+    padding: var(--mb-4);
+    padding-left: 0;
+    padding-right: 0;
+}
