@@ -6,13 +6,15 @@ import './theme/App.css';
 import Navbar from './components/models/Navbar';
 import Inicio from './components/sections/Inicio';
 import Sobre from './components/sections/Sobre/';
+import Projetos from './components/sections/Projetos';
 
 const App: React.FC = () => {
   return (
     <>
       <Navbar />
       <Inicio />
-      <Sobre/>
+      <Sobre />
+      <Projetos />
     </>
   );
 };
