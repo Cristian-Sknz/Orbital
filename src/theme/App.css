@@ -104,7 +104,7 @@
     --z-fixed: 100;
     /* Assets */
     --logo: url('../logo.svg');
-    /* --lines-background: url('../assets/lines-background-mobile.png'); */
+    --lines-background: url('../assets/lines-background-mobile.png');
 }
 
 :target {

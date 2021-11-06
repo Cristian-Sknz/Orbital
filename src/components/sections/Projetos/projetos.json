@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "title": "Christmas Landing Page",
+            "author": "André Canton",
+            "image": "./images/projects/web-design-christmas.png",
+            "link": "https://dedecanton.github.io/christmas-landing-page/"
+        },
+        {
+            "title": "EasyBank Landing Page",
+            "author": "André Canton",
+            "image": "./images/projects/easybank-landing-page.png",
+            "link": "https://dedecanton.github.io/easybank-landing-page/"
+        },
+        {
+            "title": "Portfolio Landing Page",
+            "author": "André Canton",
+            "image": "./images/projects/dedecanton_portfolio.png",
+            "link": "https://dedecanton.github.io/portfolio/"
+        },
+        {
+            "title": "Barbearia Alura",
+            "author": "Gabrielle Kieffer",
+            "image": "./images/projects/logo-alura-barber.png",
+            "link": "https://gabrielle-kieffer.github.io/projeto-barbearia-alura-/"
+        },
+        {
+            "title": "Ousubot",
+            "author": "Cristian Ferreira",
+            "image": "./images/projects/ousubot-discord-bot.png",
+            "link": "https://gabrielle-kieffer.github.io/projeto-barbearia-alura-/"
+        },
+        {
+            "title": "Notetech Home-page",
+            "author": "Cristian Ferreira",
+            "image": "./images/projects/notetech-home-page.png",
+            "link": "https://cristian-sknz.github.io/NoteTech/"
+        }
+    ]
+}
