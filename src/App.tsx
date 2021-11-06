@@ -6,6 +6,7 @@ import './theme/App.css';
 import Navbar from './components/models/Navbar';
 import Inicio from './components/sections/Inicio';
 import Sobre from './components/sections/Sobre/';
+import Servicos from './components/sections/Servicos';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,8 @@ const App: React.FC = () => {
       <Navbar />
       <Inicio />
       <Sobre/>
+
+      <Servicos/>
     </>
   );
 };
