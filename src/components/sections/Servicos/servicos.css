@@ -2,7 +2,6 @@
     background-color: var(--fourth-background-color);
 }
 
-
 .servicos-container{
     display: flex;
     flex-direction: column;

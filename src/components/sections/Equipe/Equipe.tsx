@@ -6,6 +6,7 @@ import EquipeCard, { CardDirection } from './EquipeCard';
 import OrbitalSection from '../OrbitalSection';
 import EquipeData from '~/assets/data/Equipe.json';
 import './equipe.css';
+import { useReveal } from '~/lib/hooks';
 
 export type EquipeDataType = typeof EquipeData[0];
 
@@ -16,6 +17,7 @@ type EquipeState = {
 };
 
 const Equipe: React.FC = () => {
+  const slider = useReveal<HTMLDivElement>('top');
   const [carrousel, setCarrousel] = useState<EquipeState>({
     iterator: undefined,
     data: [],
@@ -43,7 +45,7 @@ const Equipe: React.FC = () => {
 
   return (
     <OrbitalSection id='equipe' title='Equipe' showTitle>
-      <div className='slider'>
+      <div className='slider' ref={slider}>
         <EquipeCard
           direction={CardDirection.LEFT}
           data={carrousel.data[carrousel.order[0]]}
