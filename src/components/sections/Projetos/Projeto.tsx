@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Projeto = ({ ...props }) => {
   return (
@@ -13,7 +12,7 @@ const Projeto = ({ ...props }) => {
           target='_blank'
           rel='noreferrer'
           className='icon'
-          children={<Icon icon={faExternalLinkAlt} />}
+          children={<Icon icon={['fas', 'external-link-alt']} />}
         ></a>
         <div className='overlay-content'>
           <h2>{props.author}</h2>

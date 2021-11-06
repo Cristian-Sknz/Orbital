@@ -3,15 +3,14 @@ import OrbitalSection from '../OrbitalSection';
 import './servicos.css';
 
 import Activity from './Activity';
-import { faCode, faPencilRuler, faPoll } from '@fortawesome/free-solid-svg-icons';
 import { useReveal } from '~/lib/hooks';
 
 const Servicos = () => {
   const ref = useReveal<HTMLDivElement>('bottom');
   const activities = [
-    { name: 'Desenvolvimento Web', icon: faCode },
-    { name: 'Design Web', icon: faPencilRuler },
-    { name: 'Marketing Digital', icon: faPoll },
+    { name: 'Desenvolvimento Web', icon: ['fas', 'code'] },
+    { name: 'Design Web', icon: ['fas', 'pencil-ruler'] },
+    { name: 'Marketing Digital', icon: ['fas', 'poll'] },
   ];
 
   return (

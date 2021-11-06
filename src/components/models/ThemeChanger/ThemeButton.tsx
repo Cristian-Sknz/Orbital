@@ -1,10 +1,9 @@
 import React, { useCallback, useState } from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome';
 import ThemeChanger from './ThemeChanger';
 
 import './ThemeButton.css';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
 type ThemeButtonProps = {
   onClick?: () => void
@@ -19,8 +18,7 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({onClick}) => {
   }, [onClick])
 
   return (
-    <FontAwesomeIcon
-      icon={faAdjust}
+    <Icon icon={['fas', 'adjust']}
       className={`${theme} change-theme`}
       onClick={toggleTheme}
     />

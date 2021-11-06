@@ -1,40 +1,22 @@
-import {
-  faAdjust,
-  faAngleRight,
-  faArrowLeft,
-  faArrowRight,
-  faArrowUp,
-  faBars,
-  faCode,
-  faExternalLinkAlt,
-  faPencilRuler,
-  faPoll,
-  faTimes,
-} from '@fortawesome/free-solid-svg-icons';
-
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faWhatsapp,
-} from '@fortawesome/free-brands-svg-icons';
+import * as fas from '@fortawesome/free-solid-svg-icons';
+import * as fab from '@fortawesome/free-brands-svg-icons';
 
 const ApplicationIcons = [
-  faAdjust,
-  faAngleRight,
-  faArrowLeft,
-  faArrowRight,
-  faArrowUp,
-  faBars,
-  faCode,
-  faExternalLinkAlt,
-  faPencilRuler,
-  faPoll,
-  faTimes,
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faWhatsapp,
+  fas.faAdjust,
+  fas.faAngleRight,
+  fas.faArrowLeft,
+  fas.faArrowRight,
+  fas.faArrowUp,
+  fas.faBars,
+  fas.faCode,
+  fas.faExternalLinkAlt,
+  fas.faPencilRuler,
+  fas.faPoll,
+  fas.faTimes,
+  fab.faGithub,
+  fab.faInstagram,
+  fab.faLinkedin,
+  fab.faWhatsapp,
 ];
 
 export default ApplicationIcons;

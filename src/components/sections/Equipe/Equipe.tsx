@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
 import EquipeCard, { CardDirection } from './EquipeCard';
 import OrbitalSection from '../OrbitalSection';
 import EquipeData from '~/assets/data/Equipe.json';
-import './equipe.css';
 import { useReveal } from '~/lib/hooks';
+
+import './equipe.css';
 
 export type EquipeDataType = typeof EquipeData[0];
 
@@ -63,10 +63,10 @@ const Equipe: React.FC = () => {
       </div>
       <div className='buttons'>
         <div className='slider-button nav-left' onClick={() => handleClick(false)}>
-          <Icon icon={faArrowLeft} />
+          <Icon icon={['fas', 'arrow-left']} />
         </div>
         <div className='slider-button nav-right' onClick={() => handleClick(true)}>
-          <Icon icon={faArrowRight} />
+          <Icon icon={['fas', 'arrow-right']} />
         </div>
       </div>
     </OrbitalSection>
