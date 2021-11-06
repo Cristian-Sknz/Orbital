@@ -37,7 +37,9 @@ const NavbarItens: React.FC<NavbarItensProps> = (props) => {
           key={item.link}
         />
       ))}
-      <li className='nav-item'>{<ThemeButton></ThemeButton>}</li>
+      <li className='nav-item'>
+        {<ThemeButton onClick={props.closeMenu}/>}
+      </li>
     </ul>
   );
 };
