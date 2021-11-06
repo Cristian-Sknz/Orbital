@@ -11,9 +11,7 @@ const Inicio = () => {
             <div className="inicio-content">
 
                 <div className="home-img">
-                    <div className="home-img">
                         <img src="./images/home.svg" alt="Estudante Orbital" />
-                    </div>
                 </div>
                 {/* home-img */}
 
