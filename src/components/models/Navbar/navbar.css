@@ -46,10 +46,6 @@
   padding-top: 1rem;
 }
 
-.nav-item svg {
-    margin-left: .5rem;
-}
-
 .nav-link {
   color: var(--navbar-mobile-color);
   font-weight: 600;
