@@ -49,7 +49,11 @@
 .nav-link {
   color: var(--navbar-mobile-color);
   font-weight: 600;
-  transition: 1.3s;
+  transition: all ease 1.3s;
+}
+
+.nav-link svg{
+  margin-right: .2rem;
 }
 
 .nav-link:hover {
