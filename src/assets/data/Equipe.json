@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "André Canton",
+    "email": null,
+    "image": "https://i.imgur.com/O3O2bTs.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "André Canton",
+        "url": "https://www.linkedin.com/in/andre-canton/"
+      },
+      {
+        "type": "instagram",
+        "name": "dede_canton",
+        "url": "https://www.instagram.com/dede_canton/"
+      },
+      {
+        "type":"github",
+        "name": "André Canton",
+        "url": "https://github.com/dedecanton"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5554999812140",
+        "name": "5554999812140"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Cristian Ferreira",
+    "email": "cristian.datingaa@gmail.com",
+    "image": "https://i.imgur.com/K8hHABv.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Cristian Ferreira",
+        "url": "https://linkedin.com/in/cristian-sknz-ferreira/"
+      },
+      {
+        "type":"instagram",
+        "name": "cristian_sknz",
+        "url": "https://www.instagram.com/cristian_sknz/"
+      },
+      {
+        "type":"github",
+        "name": "Cristian \"SknZ\" Ferreira",
+        "url": "https://github.com/cristian-sknz"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551981830968",
+        "name": "5551981830968"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Cauã Rodriguez da Silva",
+    "email": "cauarodriguezdasilva@gmail.com",
+    "image": "https://i.imgur.com/Hqwqbmh.jpg",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Cauã Rodriguez da Silva",
+        "url": "https://www.linkedin.com/in/cauardsilva/"
+      },
+      {
+        "type":"instagram",
+        "name": "rds_caua",
+        "url": "https://www.instagram.com/rds_caua/"
+      },
+      {
+        "type":"github",
+        "name": "cauardsilva",
+        "url": "https://github.com/cauardsilva"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551982602188",
+        "name": "5551982602188"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Guilherme Baptista",
+    "email": null,
+    "image": "https://i.imgur.com/r446MgW.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Guilherme Model Baptista",
+        "url": "https://www.linkedin.com/in/guilherme-model-baptista-b483a9212/"
+      },
+      {
+        "type": "instagram",
+        "name": "guits_mb",
+        "url": "https://www.instagram.com/guits_mb/"
+      },
+      {
+        "type":"github",
+        "name": "GuitsBR",
+        "url": "https://github.com/GuitsBR"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551993317788",
+        "name": "5551993317788"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Luísa Righi Bolzan",
+    "email": null,
+    "image": "https://i.imgur.com/jORlpy6.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Luisa Bolzan",
+        "url": "https://www.linkedin.com/in/luisabolzan"
+      },
+      {
+        "type":"instagram",
+        "name": "luisarighii",
+        "url": "https://www.instagram.com/luisarighii"
+      },
+      {
+        "type":"github",
+        "name": "Luisabolzan",
+        "url": "https://github.com/luisabolzan"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551999515041",
+        "name": "5551999515041"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Gabryel D'avila Neves",
+    "email": null,
+    "image": "https://i.imgur.com/WhaQtHS.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Gabryel D'avila Neves",
+        "url": "https://www.linkedin.com/in/gabryel-neves/"
+      },
+      {
+        "type":"instagram",
+        "name": "gabryel_dn1",
+        "url": "https://www.instagram.com/gabryel_dn1/"
+      },
+      {
+        "type":"github",
+        "name": "Gabu",
+        "url": "https://github.com/XxGabyDNxX"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551989122389",
+        "name": "5551989122389"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Gabrielle Kieffer",
+    "email": "",
+    "image": "https://i.imgur.com/F8SiXqs.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Gabrielle Kieffer",
+        "url": "https://www.linkedin.com/in/gabrielle-kieffer-b47b33218"
+      },
+      {
+        "type":"instagram",
+        "name": "k_gabizinha",
+        "url": "https://www.instagram.com/k_gabizinha"
+      },
+      {
+        "type": "github",
+        "name": "gabrielle-kieffer",
+        "url": "https://github.com/gabrielle-kieffer"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5551998270513",
+        "name": "5551998270513"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Micael Gomes de Souza",
+    "email": null,
+    "image": "https://i.imgur.com/FVtDf6w.png",
+    "social": [
+      {
+        "type": "linkedin",
+        "name": "Micael Gomes de Souza",
+        "url": "https://www.linkedin.com/in/micael-893449220"
+      },
+      {
+        "type": "instagram",
+        "name": "_micaelgomes",
+        "url": "https://www.instagram.com/_micaelgomes"
+      },
+      {
+        "type": "github",
+        "name": "gomes5555",
+        "url": "https://github.com/gomes5555"
+      },
+      {
+        "type": "whatsapp",
+        "url": "https://wa.me/5554996359769",
+        "name": "5554996359769"
+      }
+    ]
+  }
+]

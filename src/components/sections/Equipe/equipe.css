@@ -1,0 +1,211 @@
+section.equipe {
+    background-color: var(--second-background-color);
+
+    padding-bottom: var(--mb-7);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    background-image: var(--lines-background);
+    background-position: top;
+    background-size: contain;
+}
+
+.equipe-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: var(--mb-4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    width: 15rem;
+    padding: var(--mb-5);
+    border-radius: .5rem;
+
+
+    background-color: var(--card-background-color);
+
+
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+
+.card-img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: var(--mb-2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.card-container {
+    margin-top: .5rem;
+    color: var(--card-font-color);
+}
+
+.card-title {
+    margin-bottom: var(--mb-1);
+}
+
+.social {
+    font-size: var(--normal-font-size);
+}
+
+
+.social a {
+    color: var(--card-font-color);
+}
+
+.social .text {
+    margin-left: .24rem;
+}
+
+.slider {
+    display: flex;
+    box-sizing: border-box;
+    margin: auto 0;
+}
+
+.card-middle {
+    z-index: var(--z-main);
+    border: 5px solid var(--card-border-color);
+}
+
+.card-middle.transition {
+    animation: transition-card  .5s;
+}
+
+.card-left,
+.card-right {
+    opacity: .2;
+    z-index: var(--z-tooltip);
+    cursor: pointer;
+}
+
+
+.card-left {
+    opacity: 0.5;
+    transform: skewy(10deg);
+    transform-origin: top right;
+    margin-right: 1rem;
+}
+
+.card-left.transition {
+    animation: transition-card-previous .5s;
+}
+
+.card-right {
+    opacity: 0.5;
+    transform: skewy(-10deg);
+    transform-origin: top left;
+    margin-left: 1rem;
+}
+
+.card-right.transition {
+    animation: transition-card-next .5s;
+}
+
+[aria-current="page"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+
+@keyframes transition-card {
+
+    from {
+        transform: scale(.3)
+    }
+
+    to {
+        transform: scale(1)
+    }
+
+}
+
+
+@keyframes transition-card-previous {
+
+    from {
+        transform: skewy(10deg) scale(.3)
+    }
+
+    to {
+        transform: skewy(10deg) scale(1)
+    }
+
+}
+
+@keyframes transition-card-next {
+
+    from {
+        transform: skewy(-10deg) scale(.3)
+    }
+
+    to {
+        transform: skewy(-10deg) scale(1)
+    }
+}
+
+.slider-button{
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    font-size: var(--h2-font-size);
+    z-index: var(--z-main);
+    cursor: pointer;
+}
+
+.buttons{
+    color: var(--btn-slider-color);
+    display: flex;
+    justify-content: center;
+}
+
+ .nav-left {
+    margin-right: 3rem
+}
+
+.nav-left:hover {
+    transform: translate(-10px, 0);
+    color: var(--btn-primary-hover);
+    transition: 0.4s;
+}
+
+.nav-right {
+    margin-left: 3rem
+}
+
+.nav-right:hover {
+    transform: translate(10px, 0);
+    color: var(--btn-primary-hover);
+    transition: 0.4s;
+}
+
+.nav-right, .nav-left {
+    transform: translate(0, 0);
+    transition: 0.4s;
+}
