@@ -4,8 +4,7 @@ import classNames from 'classnames';
 import NavbarItem from './NavbarItem';
 import NavbarData from '~/assets/data/Navbar.json';
 import { useScroll } from '~/lib/hooks';
-
-//import ThemeButton from '../ThemeButton';
+import ThemeButton from '../../ThemeChanger/ThemeButton';
 
 type NavbarItensProps = {
   closeMenu(): void;
@@ -38,7 +37,7 @@ const NavbarItens: React.FC<NavbarItensProps> = (props) => {
           key={item.link}
         />
       ))}
-      <li className='nav-item'>{/*<ThemeButton></ThemeButton>*/}</li>
+      <li className='nav-item'>{<ThemeButton></ThemeButton>}</li>
     </ul>
   );
 };
