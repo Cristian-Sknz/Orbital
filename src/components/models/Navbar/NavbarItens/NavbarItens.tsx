@@ -17,7 +17,7 @@ const getByLink = (link: any) => {
 }
 
 const NavbarItens: React.FC<NavbarItensProps> = (props) => {
-  const scroll = useScroll(NavbarData.map(({ link }) => `.${link}`));
+  const scroll = useScroll(NavbarData.map(({ link }) => `.${link}`), -200);
   const className = classNames({
     'nav-list': true,
     active: props.menu,
