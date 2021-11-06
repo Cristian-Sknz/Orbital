@@ -34,7 +34,6 @@ function useScroll(selector: string[], offset?: number) : ScrollElement | undefi
 }
 
 function toScrollElement({element, item} : SimpleObject) : ScrollElement {
-  console.log(element)
   return {
     id: element.getAttribute('id'),
     className: element.className,
