@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+body {
+  display: block;
+  margin: 0px;
+}
+
+.js-disabled-background {
+  background-color: #FAF0E8;
+  font-family: Rubik, monospace;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.js-disabled {
+  color: black;
+  font-size: 2rem;
+  position: fixed;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
