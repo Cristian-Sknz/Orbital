@@ -1,6 +1,8 @@
 import React, { useCallback, useRef, useState } from 'react';
 import classNames from 'classnames';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
+
 
 import { useElementHide } from '~/lib/hooks';
 import NavbarItens from './NavbarItens/NavbarItens';
@@ -37,7 +39,7 @@ const Navbar: React.FC = () => {
             menu={menu}
             closeMenu={() => setMenu(false)}/>
           <div className={menuClass} onClick={toggleMenu}>
-            <Icon icon={['fas', !menu ? 'bars' : 'times']} />
+            <Icon icon={ !menu ? faBars : faTimes} />
           </div>
         </div>
       </nav>
