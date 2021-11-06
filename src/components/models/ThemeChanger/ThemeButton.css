@@ -7,7 +7,7 @@
     color: var(--navbar-mobile-color);
     cursor: pointer;
     font-size: var(--icon-font-size);
-    transition: all ease .8s;
+    transition: all ease 1s;
 }
 
 .change-theme:hover {
@@ -28,13 +28,13 @@
         position: static;
         font-size: var(--h2-font-size);
         color: var(--navbar-desktop-color);
-        margin-left: 1.5rem;
+        margin-left: 1rem;
     }
 
 
     .change-theme.dark {
         transform: rotate(180deg) translateX(-.5rem);
-        margin-left: 1rem;
+        margin-left: .5rem;
         
     }
 }
