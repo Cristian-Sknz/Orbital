@@ -10,6 +10,7 @@ import Equipe from './components/sections/Equipe';
 import Servicos from './components/sections/Servicos';
 import Projetos from './components/sections/Projetos';
 import Galeria from './components/sections/Galeria';
+import Contato from './components/sections/Contato';
 
 const App: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <Servicos />
       <Projetos />
       <Galeria />
+      <Contato />
     </>
   );
 };
