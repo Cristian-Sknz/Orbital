@@ -3,7 +3,7 @@ import './projetos.css';
 import Projeto from './Projeto';
 import OrbitalSection from '../OrbitalSection';
 
-import * as json from './projetos.json';
+import * as json from '../../../assets/data/projetos.json';
 import useReveal from '~/lib/hooks/useReveal';
 
 const Projetos = () => {
