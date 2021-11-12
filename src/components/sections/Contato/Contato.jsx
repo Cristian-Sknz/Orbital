@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import OrbitalSection from '../OrbitalSection'
 import './Contato.css'
 
+import { Email, Person, Message } from '@material-ui/icons'
+
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
@@ -64,20 +66,21 @@ const Contato = () => {
                 <div className="form-group">
                     <div className="left">
                         <div className="form-section">
-                            <label htmlFor="name">Nome completo</label>
+                            <label htmlFor="name"><Person style={{verticalAlign:'middle'}}/> Nome completo</label>
                             <input className='form-text' type="text" id="name" {...register('name')} />
                             <p className="form-message invalid-message">{errors.name?.message}</p>
                         </div>
 
                         <div className="form-section">
-                            <label htmlFor="email">Endereço de email</label>
-                            <input className='form-text' type="email" id="email" placeholder="email@exemplo.com" {...register('email')} />
+                            <label htmlFor="email"> <Email style={{verticalAlign:'middle'}}/> Endereço de email</label>
+                            <input className='form-text' type="email" id="email" placeholder={`email@exemplo.com`} {...register('email')} />
                             <p className="form-message invalid-message">{errors.email?.message}</p>
+
                         </div>
                     </div>
                     <div className="right">
                         <div className="form-section" >
-                            <label htmlFor="message">Mensagem</label>
+                            <label htmlFor="message"><Message style={{verticalAlign:'middle'}}/> Mensagem</label>
                             <textarea className='form-text' id="message" cols={30} rows={10} placeholder="Deixe sua mensagem!" {...register('message')} />
                             <p className="form-message invalid-message">{errors.message?.message}</p>
                         </div>
