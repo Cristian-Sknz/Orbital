@@ -11,6 +11,7 @@ import Servicos from './components/sections/Servicos';
 import Projetos from './components/sections/Projetos';
 import Galeria from './components/sections/Galeria';
 import Contato from './components/sections/Contato';
+import Footer from './components/sections/Footer';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
       <Projetos />
       <Galeria />
       <Contato />
+      <Footer />
     </>
   );
 };
