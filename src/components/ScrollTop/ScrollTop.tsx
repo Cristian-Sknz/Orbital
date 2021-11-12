@@ -14,7 +14,7 @@ const ScrollTop = () => {
     window.addEventListener('scroll', scroll)
 
     return (
-        <a href="#" className={scrollTop ? 'scrolltop show-scroll' : 'scrolltop'} id="scroll-top">
+        <a href="#inicio" className={scrollTop ? 'scrolltop show-scroll' : 'scrolltop'} id="scroll-top">
             <ArrowUpward className='scrolltop-icon' />
         </a>
     )

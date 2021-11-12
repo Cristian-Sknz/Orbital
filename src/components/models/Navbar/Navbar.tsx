@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
     <header>
       <nav className={navbarClass} ref={navbarRef}>
         <div className='container nav-container'>
-          <a href='/#' className='nav-logo'>
+          <a href='#inicio' className='nav-logo'>
             <img alt='logo'/>
           </a>
           <NavbarItens
