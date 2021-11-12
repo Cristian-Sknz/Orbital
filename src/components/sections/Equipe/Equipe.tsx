@@ -5,6 +5,7 @@ import EquipeCard, { CardDirection } from './EquipeCard';
 import OrbitalSection from '../OrbitalSection';
 import EquipeData from '~/assets/data/Equipe.json';
 import { useReveal } from '~/lib/hooks';
+import TransitionCards from './TransitionCards.js';
 
 import './equipe.css';
 
@@ -31,6 +32,7 @@ const Equipe: React.FC = () => {
       data: EquipeData,
       order: iterator.getOrders(),
     });
+    TransitionCards()
   }, []);
 
   const handleClick = useCallback(
@@ -38,6 +40,7 @@ const Equipe: React.FC = () => {
       if (carrousel.iterator != null) {
         const action = next ? carrousel.iterator.next() : carrousel.iterator.prev();
         setCarrousel({ ...carrousel, order: action });
+        TransitionCards()
       }
     },
     [carrousel]
