@@ -47,7 +47,11 @@ const Contato = () => {
         resolver: yupResolver(validation)
     });
 
-    const onSubmit = (data) => successMessage();
+    const onSubmit = (data) => {
+        console.log(data)
+        successMessage()
+    }
+        ;
 
 
 
