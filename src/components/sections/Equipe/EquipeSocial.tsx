@@ -12,13 +12,13 @@ type EquipeSocialProps = {
   };
 };
 
-const EquipeSocial: React.FC<EquipeSocialProps> = (props) => {
+const EquipeSocial: React.FC<EquipeSocialProps> = ({name, data}) => {
   return (
-    <li className={`social ${props.name}`}>
-      <a href={props.data?.url} target='_blank' rel='noreferrer'>
-        <Icon icon={['fab', props.name as IconName]} />
+    <li className={`social ${name}`}>
+      <a href={data?.url} target='_blank' rel='noreferrer'>
+        <Icon icon={['fab', name as IconName]} />
         <SkeletonText className='text' as={'span'}>
-          {formatNumber(props.data ? props.data?.name : '')}
+          {formatNumber(data ? data?.name : '')}
         </SkeletonText>
       </a>
     </li>
