@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import OrbitalSection from '../OrbitalSection'
 import './Contato.css'
@@ -9,8 +10,6 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 
-
-
 // validação
 const validation = yup.object().shape({
     name: yup.string().required("O nome é obrigatório.").min(5, "O nome deve ter no mínimo 5 caracteres"),
@@ -19,43 +18,37 @@ const validation = yup.object().shape({
 })
 
 
-// UI validação
-const messagesVerification = () => {
-    const invalidMessages = document.querySelectorAll('.invalid-message')
-    const successfulMessage = document.querySelector('.successful-message')
-
-    invalidMessages.forEach(invalid => {
-        if (invalid.innerText.length > 1) {
-            invalid.style.display = 'block'
-            successfulMessage.style.display = 'none'
-        } else {
-            invalid.style.display = 'none'
-        }
-
-    })
-}
-
-const successMessage = () => {
-    const message = document.querySelector('.successful-message')
-    message.style.display = 'block'
-}
-
-
 const Contato = () => {
-
-
 
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(validation)
     });
 
-    const onSubmit = (data) => {
-        console.log(data)
-        successMessage()
+
+    // UI validação
+    const messagesVerification = () => {
+        const invalidMessages = document.querySelectorAll('.invalid-message')
+
+        invalidMessages.forEach(invalid => {
+
+
+            if(invalid.innerHTML.length > 1) {
+                invalid.setAttribute('style', 'display:block')
+                setShowSuccessMessage('')
+            } else {
+                invalid.setAttribute('style', 'display:none')
+            }
+        })
     }
-        ;
+
+    const [ShowSuccessMessage, setShowSuccessMessage] = useState('')
 
 
+    // show form data and succes message
+    const onSubmit = (data: object) => {
+        setShowSuccessMessage('show')
+        console.table(data)
+    };
 
 
     return (
@@ -66,13 +59,13 @@ const Contato = () => {
                 <div className="form-group">
                     <div className="left">
                         <div className="form-section">
-                            <label htmlFor="name"><Person style={{verticalAlign:'middle'}}/> Nome completo</label>
+                            <label htmlFor="name"><Person style={{ verticalAlign: 'middle' }} /> Nome completo</label>
                             <input className='form-text' type="text" id="name" {...register('name')} />
                             <p className="form-message invalid-message">{errors.name?.message}</p>
                         </div>
 
                         <div className="form-section">
-                            <label htmlFor="email"> <Email style={{verticalAlign:'middle'}}/> Endereço de email</label>
+                            <label htmlFor="email"> <Email style={{ verticalAlign: 'middle' }} /> Endereço de email</label>
                             <input className='form-text' type="email" id="email" placeholder={`email@exemplo.com`} {...register('email')} />
                             <p className="form-message invalid-message">{errors.email?.message}</p>
 
@@ -80,7 +73,7 @@ const Contato = () => {
                     </div>
                     <div className="right">
                         <div className="form-section" >
-                            <label htmlFor="message"><Message style={{verticalAlign:'middle'}}/> Mensagem</label>
+                            <label htmlFor="message"><Message style={{ verticalAlign: 'middle' }} /> Mensagem</label>
                             <textarea className='form-text' id="message" cols={30} rows={10} placeholder="Deixe sua mensagem!" {...register('message')} />
                             <p className="form-message invalid-message">{errors.message?.message}</p>
                         </div>
@@ -88,18 +81,14 @@ const Contato = () => {
                     </div>
                 </div>
 
-
                 <button onClick={messagesVerification} className='form-btn btn' type="submit">Enviar</button>
 
-                <p className="form-message successful-message">Mensagem enviada com sucesso! Em breve retornaremos!</p>
-
+                <p className={`form-message successful-message ${ShowSuccessMessage}`}>Mensagem enviada com sucesso! Em breve retornaremos!</p>
             </form>
-
         </OrbitalSection>
 
     )
 
 }
-
 
 export default Contato

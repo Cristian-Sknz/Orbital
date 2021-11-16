@@ -94,10 +94,13 @@ textarea.form-text{
 }
 
 .form-message.successful-message {
-    
     padding: var(--mb-2 );
     margin-top: var(--mb-3);
     background-color: var(--success-color);
+}
+
+.form-message.successful-message.show{
+    display: block;
 }
 
 .form-group{
