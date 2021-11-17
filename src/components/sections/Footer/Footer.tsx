@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './Footer.css'
 
-import icon from '../../../assets/icon-orbital.svg' 
+import icon from '../../../assets/images/icon-orbital.svg' 
 
 
 const Footer = () => (
