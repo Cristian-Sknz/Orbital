@@ -11,7 +11,7 @@ import Projetos from './components/sections/Projetos';
 import Galeria from './components/sections/Galeria';
 import Contato from './components/sections/Contato';
 import Footer from './components/sections/Footer';
-import ScrollTop from './components/ScrollTop';
+import ScrollTop from './components/models/ScrollTop';
 
 const App: React.FC = () => {
   return (
