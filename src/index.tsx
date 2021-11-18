@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './theme/index.css';
+import './styles/index.css';
 import App from './App';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import ApplicationIcons from './lib/ApplicationIcons';
