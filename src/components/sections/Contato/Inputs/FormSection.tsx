@@ -47,7 +47,7 @@ function getInput(type: SchemeType, props: any) {
 }
 
 const FormSection: React.FC<FormSectionProps> = (props) => {
-  const inputprops = props.scheme.props;
+  const inputprops = {...props.scheme.props, id: props.id};
   return (
     <div className="form-section">
       <label htmlFor={props.id}>
