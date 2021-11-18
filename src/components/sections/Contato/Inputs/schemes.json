@@ -1,0 +1,28 @@
+[
+  {
+    "type": "person",
+    "props": {
+      "className": "form-text",
+      "placeholder": "Nome completo",
+      "type": "text"
+    }
+  },
+  {
+    "type": "email",
+    "props": {
+      "className": "form-text",
+      "placeholder": "email@exemplo.com",
+      "type": "email"
+    }
+  },
+  {
+    "type": "message",
+    "props": {
+      "className": "form-text",
+      "placeholder": "Deixe sua Mensagem!",
+      "cols": 30,
+      "rows": 10,
+      "type": "text"
+    }
+  }
+]

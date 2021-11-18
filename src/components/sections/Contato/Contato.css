@@ -82,7 +82,7 @@ textarea.form-text{
     margin-top: .5rem;
     color: var(--message-color);
     font-style: italic;
-    display: none;
+    display: block;
     word-break: normal;
 }
 
@@ -97,10 +97,6 @@ textarea.form-text{
     padding: var(--mb-2 );
     margin-top: var(--mb-3);
     background-color: var(--success-color);
-}
-
-.form-message.successful-message.show{
-    display: block;
 }
 
 .form-group{
