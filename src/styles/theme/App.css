@@ -102,8 +102,8 @@
     --z-main: 50;
     --z-fixed: 100;
     /* Assets */
-    --logo: url('../logo.svg');
-    --lines-background: url('../assets/images/lines-background-mobile.png');
+    --logo: url('../../logo.svg');
+    --lines-background: url('../../assets/images/lines-background-mobile.png');
 }
 
 :target {
@@ -193,7 +193,6 @@ img {
 .galeria .section-title{
     color: var(--title-secondary-color);
 }
-
 
 section,
 footer{

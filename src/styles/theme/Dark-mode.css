@@ -57,6 +57,6 @@ body[dark-theme] {
     --card-font-color: #383838;
     --card-border-color: #b3b3b3;
 
-    --logo: url('../logo-white.svg');
-    --lines-background: url('../assets/images/lines-background-dark.png');
+    --logo: url('../../logo-white.svg');
+    --lines-background: url('../../assets/images/lines-background-dark.png');
 }
