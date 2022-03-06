@@ -12,7 +12,7 @@ Foi previamente estabelecido pelo grupo de professores que as tecnologias utiliz
 
 ## 🔗Link para a Landing Page:
 
-[https://dedecanton.github.io/orbital/](https://dedecanton.github.io/orbital/) ou [clique aqui!](https://dedecanton.github.io/orbital/)
+[https://cristian-sknz.github.io/orbital/](https://cristian-sknz.github.io/orbital/) ou [clique aqui!](https://cristian-sknz.github.io/orbital/)
 
 ## 🖼️Algumas imagens do projeto:
 
